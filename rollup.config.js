@@ -11,7 +11,7 @@ function build(filename) {
   return {
     input: [`${JS_SRC}/${filename}.js`],
     output: {
-      file: `${JS_DIST}/${filename}.min.js`,
+      file: `${JS_DIST}/${filename}.js`,
       format: 'iife',
       name: 'Chirpy',
       sourcemap: !isProd
